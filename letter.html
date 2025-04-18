@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surat Cinta</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Surat Cinta Untukmu 💌</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <section class="letter">
+    <p id="typed-text"></p>
+  </section>
+  <script src="js/typed.min.js"></script>
+  <script>
+    var typed = new Typed("#typed-text", {
+      strings: [
+        "Sayang, kamu adalah segalanya untukku...",
+        "Setiap detik bersamamu terasa begitu berarti...",
+        "Aku harap kita terus bersama sampai tua nanti ❤️"
+      ],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+  </script>
+</body>
+</html>

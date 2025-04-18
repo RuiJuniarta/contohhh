@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #fff0f6;
+  color: #333;
+}
+header {
+  background-color: #ff8fa3;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.hero, .letter, .countdown, .gallery, section {
+  padding: 2rem;
+  text-align: center;
+}
+.hero-img {
+  width: 250px;
+  border-radius: 10px;
+}
+.gallery img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}

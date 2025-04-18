@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Anniversary</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Countdown Anniversary 🎉</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+  <section class="countdown">
+    <p>Menuju anniversary kita:</p>
+    <div id="timer"></div>
+  </section>
+  <script>
+    const targetDate = new Date("2025-12-14T00:00:00").getTime();
+    const timerEl = document.getElementById("timer");
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timerEl.innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+    }, 1000);
+  </script>
+</body>
+</html>
